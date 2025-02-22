@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expandable BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="offer-container">
+      <h1 class="offer-title">YAY! It's BOGO</h1>
+      <div class="offer-separator"></div>
+
+      <!-- Offer Option 1 -->
+      <div class="offer-option" onclick="toggleExpand(this)">
+        <div class="offer-option__header">
+          <div class="offer-option__info">
+            <input type="radio" name="unit" aria-label="1 Unit" />
+            <span>1 Unit</span>
+            <span class="tag tag--discount">10% Off</span>
+          </div>
+          <div class="price">
+            <div class="price__current">$10.00 USD</div>
+            <div class="price__old">$24.00 USD</div>
+          </div>
+        </div>
+
+        <!-- Expandable Content -->
+        <div class="offer-expandable">
+          <div class="dropdowns">
+            <div></div>
+            <div>Size</div>
+            <div>Colour</div>
+            <!-- Row 1 -->
+            <div class="dropdown label-number">#1</div>
+            <div class="dropdown">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="dropdown label-number">#2</div>
+            <div class="dropdown">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offer Option 2 -->
+      <div
+        class="offer-option offer-option--popular"
+        onclick="toggleExpand(this)"
+      >
+        <!-- "MOST POPULAR" Badge -->
+        <div class="popular-badge">MOST POPULAR</div>
+
+        <!-- Header Section -->
+        <div class="offer-option__header">
+          <div class="offer-option__info">
+            <input type="radio" name="unit" aria-label="2 Unit" />
+            <span>2 Unit</span>
+            <span class="tag tag--discount">20% Off</span>
+          </div>
+          <div class="price">
+            <div class="price__current">$18.00 USD</div>
+            <div class="price__old">$24.00 USD</div>
+          </div>
+        </div>
+
+        <!-- Expandable Content -->
+        <div class="offer-expandable">
+          <div class="dropdowns">
+            <div></div>
+            <div>Size</div>
+            <div>Colour</div>
+
+            <!-- Row 1 -->
+            <div class="dropdown label-number">#1</div>
+            <div class="dropdown">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="dropdown label-number">#2</div>
+            <div class="dropdown">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offer Option 3 -->
+      <div class="offer-option" onclick="toggleExpand(this)">
+        <div class="offer-option__header">
+          <div class="offer-option__info">
+            <input type="radio" name="unit" aria-label="3 Unit" />
+            <span>3 Unit</span>
+            <span class="tag tag--discount">30% Off</span>
+          </div>
+          <div class="price">
+            <div class="price__current">$24.00 USD</div>
+            <div class="price__old">$24.00 USD</div>
+          </div>
+        </div>
+
+        <!-- Expandable Content -->
+        <div class="offer-expandable">
+          <div class="dropdowns">
+            <div></div>
+            <div>Size</div>
+            <div>Colour</div>
+            <!-- Row 1 -->
+            <div class="dropdown label-number">#1</div>
+            <div class="dropdown">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="dropdown label-number">#2</div>
+            <div class="dropdown">
+              <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Info and Add to Cart -->
+      <div class="offer-footer">
+        <div style="display: flex; justify-content: space-between">
+          <p class="free-delivery">Free Delivery</p>
+          <p class="total-price">Total: $18.00 USD</p>
+        </div>
+        <button class="btn-add-to-cart">
+          <i class="fas fa-plus"></i> Add to Cart
+        </button>
+        <p class="footer-text">@ Created By Deepak</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

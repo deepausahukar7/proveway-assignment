@@ -1,0 +1,200 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #1a202c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.offer-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Header */
+.offer-title {
+  text-align: center;
+  color: #fb6699;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.offer-separator {
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+/* Option Box */
+.offer-option {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: white;
+}
+
+.offer-option--selected,
+.offer-option--popular {
+  border-color: #fb6699;
+}
+
+/* "MOST POPULAR" Badge */
+.popular-badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: #ff589e;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Discount Badge */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: #fb6699;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+
+/* Option Info */
+.offer-option__info {
+  display: flex;
+  align-items: center;
+}
+
+.tag--discount {
+  background-color: #fb6699;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+
+/* Price */
+.price {
+  text-align: right;
+}
+
+.price__current {
+  color: #333;
+  font-weight: bold;
+}
+
+.price__old {
+  color: #aaa;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+/* Expandable Container */
+.offer-expandable {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px;
+}
+
+.offer-option.expanded .offer-expandable {
+  max-height: 150px; /* Adjust as needed */
+}
+
+/* Dropdowns */
+.dropdowns {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+/* Dropdown Labels */
+.label-number {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+/* Dropdown Styling */
+.dropdown select {
+  width: 80%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Footer */
+.footer-text {
+  text-align: end;
+  font-size: 12px;
+  color: grey;
+  margin-top: 10px;
+}
+
+.offer-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.free-delivery {
+  color: #fb6699;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.total-price {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Add to Cart Button */
+.btn-add-to-cart {
+  background-color: #fb6699;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #c2185b;
+}
+
+/* Powered By */
+.powered-by {
+  color: #aaa;
+  font-size: 0.8rem;
+}
